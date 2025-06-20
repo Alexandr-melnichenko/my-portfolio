@@ -1,5 +1,6 @@
 .header {
-  padding: 20px 0;
+  padding: 20px 42px;
+  background-color: #000000;
 }
 .nav {
   display: flex;
@@ -41,4 +42,10 @@
 }
 .nav-link.active::after {
   background: #747bff;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  padding: 0;
 }
