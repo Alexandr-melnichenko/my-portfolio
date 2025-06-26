@@ -1,0 +1,91 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* min-width: 320px; */
+  background-color: #000;
+  height: 696px;
+  padding: 10px 30px 46px 38px;
+  background-image: url('../img/webp/Portfolio-portrait.webp');
+  background-size: cover;
+  background-position: -20px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 560px;
+  left: 0;
+  width: 120%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotate(-9deg);
+  z-index: 2;
+}
+
+/* Styles for Mobile devices */
+.hero-container {
+  max-width: 375px;
+  padding: 0;
+  /* background-color: #000; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 3;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 768px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1200px;
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-Hi {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.text-h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 35px;
+  padding: 0;
+}
+
+.text-profession {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  color: white;
+  font-size: 12px;
+}

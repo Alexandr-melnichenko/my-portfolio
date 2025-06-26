@@ -9,9 +9,11 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
+@import url('./stylesheet.css');
 
 /* Sections style */
 @import url('./header.css');
+@import url('./hero.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
