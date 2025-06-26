@@ -1,0 +1,98 @@
+.second-hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 700px;
+  /* padding: 10px 30px 46px 38px; */
+  background-image: radial-gradient(
+      ellipse at center,
+      rgba(19, 19, 19, 0) 0%,
+      rgba(14, 0, 0, 0.3) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.4) 15%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../img/webp/Mounting-background.webp');
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* .second-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 560px;
+  left: 0;
+  width: 120%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: rotate(-9deg);
+  z-index: 2;
+} */
+
+/* Styles for Mobile devices */
+.second-hero-container {
+  max-width: 375px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  z-index: 3;
+}
+
+.second-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+}
+
+.second-icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-my-name {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 25px;
+}
+
+.text-developer {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 32px;
+  padding: 0;
+  text-align: center;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .second-hero-container {
+    max-width: 768px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .second-hero-container {
+    max-width: 1200px;
+  }
+}
