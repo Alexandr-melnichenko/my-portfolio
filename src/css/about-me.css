@@ -77,16 +77,12 @@
   position: relative;
 }
 
-.service::before {
-  content: '';
+.svg-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -14px;
+  left: -32px;
   width: 44px;
   height: 44px;
-  background-image: url(../img/karandash.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .services-title {
@@ -107,13 +103,22 @@
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 0.18rem;
+  margin: 74px auto;
 }
 
 .tech-list {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 88px;
 }
+
+.skill-name {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.18rem;
+}
+
 .technology-icons {
   width: 84px;
   height: 100px;
@@ -122,4 +127,6 @@
 .technology-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 34px;
 }
