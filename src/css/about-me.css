@@ -1,0 +1,125 @@
+.about-me-section {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 74px;
+  padding-bottom: 94px;
+  background-image: radial-gradient(rgba(26, 21, 21, 0), rgba(1, 1, 1, 0.26));
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.about-me-text {
+  text-align: justify;
+  margin: 34px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.btn-explore {
+  width: 148px;
+  height: 40px;
+  border: none;
+  background: none;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 66px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-box {
+  border: 8px solid #000;
+  width: auto;
+  padding: 20px 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-in-box {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.43rem;
+}
+
+.list-of-services {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  margin-bottom: 74px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  position: relative;
+}
+
+.service::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  background-image: url(../img/karandash.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.18rem;
+}
+
+.separator {
+  width: 160px;
+  height: 12px;
+  margin-bottom: 90px;
+}
+
+.skills-titles {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 0.18rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.technology-icons {
+  width: 84px;
+  height: 100px;
+}
+
+.technology-box {
+  display: flex;
+  flex-direction: column;
+}
