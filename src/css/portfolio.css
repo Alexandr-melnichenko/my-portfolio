@@ -1,0 +1,98 @@
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.portfolio-title-container {
+  padding: 64px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-image: url(../img/portfolio-background.webp);
+  background-size: auto;
+  background-position: -690px -125px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: rgba(26, 26, 26, 1);
+  width: 100%;
+}
+
+.filter-btns {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px 0;
+  color: #7c7c7c;
+  background: none;
+  border: none;
+  width: 178px;
+  border-bottom: 2px solid #7c7c7c;
+}
+
+.filter-btns:hover,
+.filter-btns:focus,
+.filter-btns:active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.project-container {
+  width: 100%;
+  height: 210px;
+}
+
+.project-one-background {
+  background-image: url(../img/Project-one-background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.project-two-background {
+  background-image: url(../img/Project-two-background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.project-three-background {
+  background-image: url(../img/Project-three-background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.phrase-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1a1a1a;
+  width: 100%;
+}
+
+.phrase {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
