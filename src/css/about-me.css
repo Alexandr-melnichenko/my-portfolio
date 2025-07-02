@@ -61,6 +61,7 @@
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.43rem;
+  margin: 0 auto;
 }
 
 .list-of-services {
@@ -110,6 +111,7 @@
   display: flex;
   flex-direction: column;
   gap: 88px;
+  padding: 0;
 }
 
 .skill-name {
