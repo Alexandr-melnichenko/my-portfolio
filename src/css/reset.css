@@ -32,3 +32,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.header-hero-wrapper {
+  background-image: linear-gradient(100deg, #d7d7d7 50%, #000 50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .header-hero-wrapper {
+    background-image: linear-gradient(100deg, #d7d7d7 45%, #000 45%);
+  }
+}

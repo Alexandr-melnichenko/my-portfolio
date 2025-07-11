@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: flex-end;
   /* min-width: 320px; */
-  background-color: #000;
+  /* background-color: #000; */
   height: 696px;
   padding: 10px 30px 46px 38px;
-  background-image: url('../img/webp/Portfolio-portrait.webp');
-  background-size: cover;
+  background-image: url('../img/hero-portrait.webp');
+  background-size: contain;
   background-position: -20px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -36,19 +36,9 @@
   justify-content: space-between;
   align-items: flex-end;
   z-index: 3;
+  margin: 0 auto;
 }
 /* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .hero-container {
-    max-width: 768px;
-  }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .hero-container {
-    max-width: 1200px;
-  }
-}
 
 .text-wrapper {
   display: flex;
@@ -66,6 +56,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.social-icons {
+  fill: #fff;
+  width: 25px;
+  height: 25px;
 }
 
 .text-Hi {
@@ -88,4 +84,58 @@
   font-weight: 800;
   color: white;
   font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    background-size: 330px;
+    background-position: 380px;
+    height: 500px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .hero-section::before {
+    display: none;
+  }
+
+  .hero-container {
+    width: 100%;
+    max-width: 768px;
+    flex-direction: column;
+    gap: 100px;
+    align-items: flex-start;
+  }
+
+  .icons-wrapper {
+    flex-direction: row;
+  }
+
+  .text-Hi {
+    color: black;
+  }
+  .text-h1 {
+    color: black;
+  }
+  .text-profession {
+    color: #909090;
+  }
+  .social {
+    width: 50px;
+    height: 46px;
+    background-color: #c4c4c4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .social-icons {
+    width: 30px;
+    height: 30px;
+    fill: black;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1200px;
+  }
 }
