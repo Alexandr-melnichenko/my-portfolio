@@ -158,11 +158,16 @@
 @media only screen and (min-width: 1200px) {
   .hero-section {
     max-width: 1200px;
+    margin: auto;
+    padding: 0 80px;
+    box-sizing: border-box;
   }
 
   .hero-container {
+    width: 100%;
     max-width: 1200px;
     max-height: 820px;
+    margin: 0;
   }
 
   .img-hero {
@@ -177,5 +182,40 @@
     height: 820px; /* Изображение масштабируется по высоте контейнера .img-hero */
     width: auto; /* Ширина автоматически масштабируется, сохраняя пропорции */
     object-fit: contain; /* **КЛЮЧЕВОЕ СВОЙСТВО**: Гарантирует, что изображение ПОЛНОСТЬЮ поместится в контейнер без обрезания, сохраняя пропорции. */
+  }
+
+  .hero-text-column {
+    margin: 0;
+  }
+
+  .text-Hi {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .text-h1 {
+    font-size: 80px;
+  }
+
+  .text-profession {
+    font-size: 24px;
+  }
+
+  .text-wrapper {
+    gap: 30px;
+  }
+
+  .social {
+    width: 60px;
+    height: 56px;
+  }
+
+  .social-icons {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-text-column {
+    gap: 136px;
   }
 }
