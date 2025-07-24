@@ -6,6 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/my-portfolio/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
@@ -36,6 +37,7 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
       emptyOutDir: true,
+      assetInlineLimit: 0,
     },
     plugins: [
       injectHTML(),
