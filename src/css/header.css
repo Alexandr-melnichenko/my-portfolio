@@ -19,6 +19,12 @@
   height: 35px;
 }
 
+/* .close-btn-icon {
+  fill: #fff;
+  width: 42px;
+  height: 35px;
+} */
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -52,14 +58,94 @@
   background: #747bff;
 }
 
-.menu-btn {
+.btn-menu {
   background: none;
   border: none;
   padding: 0;
 }
 
+.close-menu-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: none;
+}
+
+.close-btn-icon {
+  width: 25px;
+  height: 25px;
+  display: none;
+  z-index: 1001;
+  fill: var(--text-color);
+  stroke: var(--text-color);
+}
+
 .menu-links {
   display: none;
+}
+
+.btn-menu:checked + .mobile-menu-navigation {
+  padding-top: 276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu-header {
+  position: fixed;
+  transform: translateY(-130%);
+  transition: transform 0.2s;
+  top: 76px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-header {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItem-header {
+  display: block;
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding-bottom: 24px;
+  color: white;
+  text-align: center;
+  padding-top: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menuItem-header:hover,
+.menuItem-header:focus {
+  color: black;
+  background-color: #fff;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+body.modal-open {
+  overflow: hidden; /* Отключает прокрутку */
+  position: fixed; /* Фиксирует body, чтобы избежать "прыжка" при исчезновении полосы прокрутки */
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -78,6 +164,9 @@
     padding: 40px 20px;
     max-width: 1200px;
     box-sizing: border-box;
+  }
+  .btn-menu {
+    display: none;
   }
 
   .menu-btn {
@@ -115,5 +204,9 @@
   .nav-logo-icon {
     width: 60px;
     height: 50px;
+  }
+
+  .mobile-menu-navigation {
+    display: none;
   }
 }

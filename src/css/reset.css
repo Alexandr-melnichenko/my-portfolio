@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -35,6 +39,48 @@ img {
 
 .header-hero-wrapper {
   background-color: #000;
+}
+
+.menu-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu-modal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-nav-link {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+
+.modal-nav-link:hover,
+.modal-nav-link:focus {
+  background-color: #fff;
+  color: #000;
 }
 
 @media only screen and (min-width: 768px) {
