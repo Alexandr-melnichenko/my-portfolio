@@ -1,15 +1,17 @@
 import nodemailer from 'nodemailer';
 
 export default async (req, res) => {
-  const body = new URLSearchParams(req.body);
+  //   const body = new URLSearchParams(req.body);
 
-  const name = body.get('name');
-  const email = body.get('email');
-  const phone = body.get('phone');
-  const message = body.get('message');
+  //   const name = body.get('name');
+  //   const email = body.get('email');
+  //   const phone = body.get('phone');
+  //   const message = body.get('message');
+
+  const { user_name, user_email, user_phoneNumber, user_message } = req.body;
 
   // 2. Валидация данных (простая проверка)
-  if (!name || !email || !message) {
+  if (!user_name || !user_email || !user_message) {
     return res.status(400).send('Fill all required areas!');
   }
 
@@ -28,10 +30,10 @@ export default async (req, res) => {
     to: 'alexandr.melnichenko@gmail.com',
     subject: `Нове повідомлення з лендінгу портфоліо від ${name}`,
     html: `
-    <p><b>Імʼя:</b> ${name}</p>
-    <p><b>Пошта:</b> ${email}</p>
-    <p><b>Телефон:</b> ${phone}</p>
-    <p><b>Повідомлення:</b> ${message}</p>
+    <p><b>Імʼя:</b> ${user_name}</p>
+    <p><b>Пошта:</b> ${user_email}</p>
+    <p><b>Телефон:</b> ${user_phoneNumber}</p>
+    <p><b>Повідомлення:</b> ${user_message}</p>
 `,
   };
 
