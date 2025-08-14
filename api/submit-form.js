@@ -1,6 +1,6 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   // 1. Получение данных из формы (метод POST)
   const { name, email, phone, message } = req.body;
 
