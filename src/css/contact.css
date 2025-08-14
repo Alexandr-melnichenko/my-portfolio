@@ -10,10 +10,12 @@
 
 .contact-section-text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   width: 70%;
-  text-align: justify;
+  letter-spacing: normal;
+  line-height: 200%;
+  text-align: center;
   margin: 40px auto;
 }
 
