@@ -28,7 +28,7 @@ export default async (req, res) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: 'alexandr.melnichenko@gmail.com',
-    subject: `Нове повідомлення з лендінгу портфоліо від ${name}`,
+    subject: `Нове повідомлення з лендінгу портфоліо від ${user_name}`,
     html: `
     <p><b>Імʼя:</b> ${user_name}</p>
     <p><b>Пошта:</b> ${user_email}</p>
