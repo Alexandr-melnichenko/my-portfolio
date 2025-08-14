@@ -1,8 +1,12 @@
 import nodemailer from 'nodemailer';
 
 export default async (req, res) => {
-  // 1. Получение данных из формы (метод POST)
-  const { name, email, phone, message } = req.body;
+  const body = new URLSearchParams(req.body);
+
+  const name = body.get('name');
+  const email = body.get('email');
+  const phone = body.get('phone');
+  const message = body.get('message');
 
   // 2. Валидация данных (простая проверка)
   if (!name || !email || !message) {
