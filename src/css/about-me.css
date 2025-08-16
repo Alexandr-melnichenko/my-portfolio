@@ -14,15 +14,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 70%;
 }
 
 .about-me-text {
   text-align: justify;
   margin: 34px auto;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .btn-explore {
