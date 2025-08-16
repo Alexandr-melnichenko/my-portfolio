@@ -72,6 +72,18 @@
   display: none;
 }
 
+.berries-hidden-text {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.berries-hidden-text.visible {
+  max-height: fit-content;
+  opacity: 1;
+  margin-bottom: 45px;
+}
+
 @media only screen and (min-width: 768px) {
   .small-btn-text {
     display: none;
