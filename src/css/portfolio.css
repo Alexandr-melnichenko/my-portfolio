@@ -108,7 +108,9 @@
   justify-items: center;
 }
 
-.portfolio-item:hover .overlay {
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay,
+.portfolio-item:active .overlay {
   opacity: 1; /* Оверлей становится видимым */
 }
 
