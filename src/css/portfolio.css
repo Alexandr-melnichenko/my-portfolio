@@ -110,7 +110,8 @@
 
 .portfolio-item:hover .overlay,
 .portfolio-item:focus .overlay,
-.portfolio-item:active .overlay {
+.portfolio-item:active .overlay,
+.portfolio-item.touched .overlay {
   opacity: 1; /* Оверлей становится видимым */
 }
 

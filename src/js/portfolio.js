@@ -21,4 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  projects.forEach(item => {
+    item.addEventListener('touchstart', event => {
+      projects.forEach(i => i.classList.remove('touched'));
+      item.classList.add('touched');
+    });
+  });
+
+  document.body.addEventListener('touchstart', event => {
+    if (!event.target.closest('.portfolio-item')) {
+      projects.forEach(item => item.classList.remove('touched'));
+    }
+  });
 });
