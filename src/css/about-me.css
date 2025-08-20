@@ -137,6 +137,13 @@
   display: none;
 }
 
+.extended-box.visible-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+}
+
 .second-tech-list {
   display: none;
 }
@@ -147,6 +154,19 @@
 
 .other-tech-list {
   display: none;
+}
+
+.skills-btn-more {
+  display: block;
+  background: none;
+  border: none;
+  padding: 8px 44px;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 768px) {
@@ -224,6 +244,10 @@
 
   .other-icon {
     margin-bottom: 22px;
+  }
+
+  .skills-btn-more {
+    display: none;
   }
 }
 
