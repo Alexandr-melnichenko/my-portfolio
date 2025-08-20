@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const readMoreSkillsBtn = document.getElementById('moreSkillsBtn');
-  const hiddenSkills = document.getElementsByClassName('extended-box');
+  const hiddenSkills = document.querySelectorAll('extended-box');
 
   readMoreSkillsBtn.addEventListener('click', () => {
     hiddenSkills.classList.toggle('visible-skills');
