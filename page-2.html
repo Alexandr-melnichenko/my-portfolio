@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/styles-C_TD7I1q.css">
+    <link rel="stylesheet" crossorigin href="/my-portfolio/assets/styles-B9z23Kx5.css">
   </head>
   <body>
     <header class="header">
@@ -17,39 +17,76 @@
         </svg>
       </a>
 
+      <!-- <div class="lang-switcher">
+        <button id="lang-en" class="lang-btn">English</button>
+        <button id="lang-uk" class="lang-btn">Українська</button>
+      </div> -->
+
       <ul class="menu-links">
         <li>
-          <a href="#about-me" class="nav-link">About me</a>
+          <a href="#about-me" data-i18n="menuLinkAboutMe" class="nav-link"
+            >ABOUT ME</a
+          >
         </li>
         <li>
-          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#skills" data-i18n="menuLinkSkills" class="nav-link"
+            >skillS</a
+          >
         </li>
         <li>
-          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#portfolio" data-i18n="menuLinkPortfolio" class="nav-link"
+            >PortFolio</a
+          >
         </li>
         <li>
-          <a href="#contact-me" class="contact-link">CONTACT ME</a>
+          <a
+            href="#contact-me"
+            data-i18n="menuLinkContactMe"
+            class="contact-link"
+            >CONTACT ME</a
+          >
+        </li>
+        <li>
+          <select id="desktop-language-select" class="lang-selector">
+            <option value="en">ENG</option>
+            <option value="uk">УКР</option>
+          </select>
         </li>
       </ul>
 
-      <button class="btn-menu js-open-menu">
-        <svg class="btn-menu-icon" width="31px" height="27px">
-          <use href="/my-portfolio/assets/sprite-fvbt7ckn.svg#icon-Group-menu"></use>
-        </svg>
-        <svg class="close-btn-icon">
-          <use href="/my-portfolio/assets/sprite-fvbt7ckn.svg#icon-close-btn" />
-        </svg>
-      </button>
+      <div class="lang-switcher-btn-container">
+        <select id="mobile-language-select" class="lang-selector">
+          <option value="en">ENG</option>
+          <option value="uk">УКР</option>
+        </select>
+
+        <button class="btn-menu js-open-menu">
+          <svg class="btn-menu-icon" width="31px" height="27px">
+            <use href="/my-portfolio/assets/sprite-fvbt7ckn.svg#icon-Group-menu"></use>
+          </svg>
+          <svg class="close-btn-icon">
+            <use href="/my-portfolio/assets/sprite-fvbt7ckn.svg#icon-close-btn" />
+          </svg>
+        </button>
+      </div>
     </nav>
 
     <!-- mobil-modal -->
     <div class="mobile-menu-header">
       <nav aria-label="mobile navigation" class="mobile-menu-navigation">
         <ul class="menu-header">
+          <!-- <li>
+            <select id="language-select" class="lang-selector menuItem-header">
+              <option value="en">ENG</option>
+              <option value="uk">УКР</option>
+            </select>
+          </li> -->
+
           <li>
             <a
               href="#about-me"
               aria-label="read about me"
+              data-i18n="modalMenuLinkAboutMe"
               class="menuItem-header"
               >About me</a
             >
@@ -58,18 +95,24 @@
             <a
               href="#skills"
               aria-label="read about my skills"
+              data-i18n="modalMenuLinkSkills"
               class="menuItem-header"
               >Skills</a
             >
           </li>
           <li>
-            <a href="#portfolio" aria-label="portfolio" class="menuItem-header"
+            <a
+              href="#portfolio"
+              data-i18n="modalMenuLinkPortfolio"
+              aria-label="portfolio"
+              class="menuItem-header"
               >Portfolio</a
             >
           </li>
           <li>
             <a
               href="#contact-me"
+              data-i18n="modalMenuLinkContactMe"
               aria-label="contact me"
               class="menuItem-header"
               >CONTACT ME</a
@@ -98,7 +141,7 @@
       <svg class="up-arrow-icon">
         <use href="/my-portfolio/assets/sprite-fvbt7ckn.svg#icon-double-arrow"></use>
       </svg>
-      <p class="up-arrow-btn-title">BACK TO TOP</p>
+      <p data-i18n="footerUpBtn" class="up-arrow-btn-title">BACK TO TOP</p>
     </button>
     <div class="social-icons-row">
       <a
@@ -141,7 +184,9 @@
         </svg>
       </a>
     </div>
-    <p class="copyright">@2025 Olexandr Melnichenko All Rights Reserved.</p>
+    <p data-i18n="footerCopyrightText" class="copyright">
+      @2025 Olexandr Melnichenko All Rights Reserved.
+    </p>
   </div>
 </footer>
 
