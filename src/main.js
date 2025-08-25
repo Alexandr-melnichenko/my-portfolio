@@ -3,6 +3,7 @@ import './js/berries';
 import './js/about-me';
 import './js/portfolio';
 import './js/footer';
+import './js/contact';
 import { updateContent, changeLanguage } from './js/i18n';
 import i18next from 'i18next';
 

@@ -61,3 +61,40 @@
   padding: 12px 40px;
   margin-top: 12px;
 }
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: white;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1000;
+  font-family: sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Цвет для успешного сообщения */
+.toast--success {
+  background-color: #4caf50; /* Green */
+}
+
+/* Цвет для сообщения об ошибке */
+.toast--error {
+  background-color: #f44336; /* Red */
+}
+
+/* Класс для отображения тостера */
+.toast.show {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+/* Класс для скрытия тостера */
+.toast.hide {
+  transform: translateX(-50%) scale(0.8);
+  opacity: 0;
+}

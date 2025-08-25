@@ -12,11 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
     hiddenContent.classList.toggle('visible');
 
     updateContent();
-
-    // if (hiddenContent.classList.contains('visible')) {
-    //   readMoreBtn.textContent = i18next.t('berriesBtnHide');
-    // } else {
-    //   readMoreBtn.textContent = i18next.t('berriesBtnReadMore');
-    // }
   });
 });
