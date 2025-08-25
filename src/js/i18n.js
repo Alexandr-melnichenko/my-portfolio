@@ -72,6 +72,9 @@ const translations = {
       contactFormBtnSubmit: 'SUBMIT',
       footerUpBtn: 'BACK TO TOP',
       footerCopyrightText: '@2025 Olexandr Melnichenko All Rights Reserved.',
+      toastSuccess: 'Message sent successfully!',
+      toastError: 'Server error. Please try again later.',
+      toastNetworkError: 'Sending error. Please try again.',
     },
   },
   uk: {
@@ -145,6 +148,9 @@ const translations = {
       contactFormBtnSubmit: 'НАДІСЛАТИ',
       footerUpBtn: 'НАЗАД НАГОРУ',
       footerCopyrightText: '@2025 Олександр Мельниченко. Всі права захищено.',
+      toastSuccess: 'Повідомлення успішно відправлено!',
+      toastError: 'Помилка серверу. Спробуйте пізніше.',
+      toastNetworkError: 'Помилка відправки. Спробуйте ще раз.',
     },
   },
 };

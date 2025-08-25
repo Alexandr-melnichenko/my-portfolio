@@ -1,3 +1,5 @@
+import i18next from 'i18next';
+
 const form = document.querySelector('.form-container');
 
 form.addEventListener('submit', async event => {
@@ -13,21 +15,21 @@ form.addEventListener('submit', async event => {
       },
       body: JSON.stringify(data),
     });
-    const result = await response.text();
 
     if (response.ok) {
-      showToast(result, 'success');
+      showToast('toastSuccess', 'success');
       form.reset();
     } else {
-      showToast(result, 'error');
+      showToast('toastError', 'error');
     }
   } catch (error) {
     showToast('Помилка відправки. Спробуйте ще раз.', 'error');
-    console.error('Error:', error);
+    console.error('toastNetworkError', error);
   }
 });
 
-function showToast(message, type) {
+function showToast(translationKey, type) {
+  const message = i18next.t(translationKey);
   const toast = document.createElement('div');
   toast.classList.add('toast', `toast--${type}`);
   toast.textContent = message;

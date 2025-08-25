@@ -55,5 +55,8 @@
     "contactFormInputPlaceholderMessage": "YOUR MESSAGE*",
     "contactFormBtnSubmit": "SUBMIT",
     "footerUpBtn": "BACK TO TOP",
-    "footerCopyrightText": "@2025 Olexandr Melnichenko All Rights Reserved."
+    "footerCopyrightText": "@2025 Olexandr Melnichenko All Rights Reserved.",
+    "toastSuccess": "Message sent successfully!",
+    "toastError": "Server error. Please try again later.",
+    "toastNetworkError": "Sending error. Please try again."
 }
