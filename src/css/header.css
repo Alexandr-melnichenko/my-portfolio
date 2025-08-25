@@ -25,6 +25,19 @@
   height: 35px;
 } */
 
+.lang-switcher-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.lang-selector {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -165,6 +178,11 @@ body.modal-open {
     max-width: 1200px;
     box-sizing: border-box;
   }
+
+  .lang-switcher-btn-container {
+    display: none;
+  }
+
   .btn-menu {
     display: none;
   }
@@ -177,7 +195,7 @@ body.modal-open {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
+    gap: 24px;
   }
   .nav-link {
     color: #fff;

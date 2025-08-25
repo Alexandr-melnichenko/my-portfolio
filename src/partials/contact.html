@@ -1,8 +1,8 @@
 <section id="contact-me" class="contact-section">
   <div class="title-box">
-    <h2 class="title-in-box">CONTACT</h2>
+    <h2 data-i18n="contactTitleContact" class="title-in-box">CONTACT</h2>
   </div>
-  <p class="contact-section-text">
+  <p data-i18n="contactText" class="contact-section-text">
     My name is Оlexander Melnichenko. I am a full stack web developer. I am
     proficient in HTML, CSS, Javascript, React, Redux and other technologies. If
     you need to write a mobile application or website, please contact me by
@@ -17,6 +17,7 @@
   <form action="/api/submit-form" method="POST" class="form-container">
     <input
       type="text"
+      data-i18n-placeholder="contactFormInputPlaceholderName"
       class="input-style"
       id="nameInput"
       name="user_name"
@@ -26,6 +27,7 @@
 
     <input
       type="email"
+      data-i18n-placeholder="contactFormInputPlaceholderEmail"
       class="input-style"
       id="emailInput"
       name="user_email"
@@ -35,6 +37,7 @@
 
     <input
       type="text"
+      data-i18n-placeholder="contactFormInputPlaceholderPhone"
       class="input-style"
       id="phoneNumberInput"
       name="user_phoneNumber"
@@ -43,6 +46,7 @@
 
     <textarea
       class="input-style"
+      data-i18n-placeholder="contactFormInputPlaceholderMessage"
       id="messageTextarea"
       name="user_message"
       rows="5"
@@ -50,6 +54,12 @@
       required
     ></textarea>
 
-    <button type="submit" class="submit-button">SUBMIT</button>
+    <button
+      type="submit"
+      data-i18n="contactFormBtnSubmit"
+      class="submit-button"
+    >
+      SUBMIT
+    </button>
   </form>
 </section>

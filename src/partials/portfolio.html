@@ -1,15 +1,31 @@
 <section id="portfolio" class="portfolio-section">
   <div class="portfolio-title-container">
     <div class="title-box">
-      <h2 class="title-in-box">PORTFOLIO</h2>
+      <h2 data-i18n="portfolioTitle" class="title-in-box">PORTFOLIO</h2>
     </div>
   </div>
   <div class="btn-container">
-    <button class="filter-btns active" data-category="all">ALL</button>
-    <button class="filter-btns" data-category="personal">
+    <button
+      data-i18n="portfolioBtnAll"
+      class="filter-btns active"
+      data-category="all"
+    >
+      ALL
+    </button>
+    <button
+      data-i18n="portfolioBtnPersonalProjects"
+      class="filter-btns"
+      data-category="personal"
+    >
       PERSONAL PROJECTS
     </button>
-    <button class="filter-btns" data-category="team">TEAM PROJECTS</button>
+    <button
+      data-i18n="portfolioBtnTeamProjects"
+      class="filter-btns"
+      data-category="team"
+    >
+      TEAM PROJECTS
+    </button>
   </div>
 
   <ul class="portfolio-list">
@@ -21,9 +37,13 @@
       />
       <div class="overlay">
         <div class="overlay-content">
-          <p class="overlay-tag">team project</p>
-          <h3 class="overlay-title">AQUATRACK</h3>
-          <p class="overlay-text">
+          <p data-i18n="portfolioOverlayTagTeamProject" class="overlay-tag">
+            team project
+          </p>
+          <h3 data-i18n="portfolioOverlayTitleAquatrack" class="overlay-title">
+            AQUATRACK
+          </h3>
+          <p data-i18n="portfolioOverlayTextAquatrack" class="overlay-text">
             Water tracker is a team project designed to quickly track the amount
             of water drunk per day. <br /><br />It is relevant for athletes and
             people who monitor their own health. <br /><br />The tracker uses
@@ -35,9 +55,10 @@
 
           <a
             class="overlay-btn"
+            data-i18n="portfolioBtnVisit"
             target="_blank"
             href="https://h2-o-flow-team4.vercel.app/"
-            >DEMO</a
+            >VISIT</a
           >
         </div>
       </div>
@@ -51,9 +72,13 @@
       />
       <div class="overlay">
         <div class="overlay-content">
-          <p class="overlay-tag">personal project</p>
-          <h3 class="overlay-title">INVENTORY</h3>
-          <p class="overlay-text">
+          <p data-i18n="portfolioOverlayTagPersonalProject" class="overlay-tag">
+            personal project
+          </p>
+          <h3 data-i18n="portfolioOverlayTitleInventory" class="overlay-title">
+            INVENTORY
+          </h3>
+          <p data-i18n="portfolioOverlayTextInventory" class="overlay-text">
             Inventory is my personal test project, which implements the
             functionality of accounting for goods added to the warehouse with
             the potential ability to edit, add and delete goods from the
@@ -63,8 +88,12 @@
             NODE.JS and Java Script.
           </p>
 
-          <a class="overlay-btn" target="_blank" href="https://inventory.in.ua/"
-            >DEMO</a
+          <a
+            data-i18n="portfolioBtnVisit"
+            class="overlay-btn"
+            target="_blank"
+            href="https://inventory.in.ua/"
+            >VISIT</a
           >
         </div>
       </div>
@@ -78,9 +107,19 @@
       />
       <div class="overlay">
         <div class="overlay-content">
-          <p class="overlay-tag">team project</p>
-          <h3 class="overlay-title">LLOYDJEFFERSON.</h3>
-          <p class="overlay-text">
+          <p data-i18n="portfolioOverlayTagTeamProject" class="overlay-tag">
+            team project
+          </p>
+          <h3
+            data-i18n="portfolioOverlayTitleLloydJefferson"
+            class="overlay-title"
+          >
+            LLOYDJEFFERSON.
+          </h3>
+          <p
+            data-i18n="portfolioOverlayTextLloydJefferson"
+            class="overlay-text"
+          >
             This is a team training project - a landing page with a web
             developer's portfolio. This project actively uses CSS animation, a
             dark theme and adaptive layout are implemented. <br /><br />In this
@@ -91,9 +130,10 @@
 
           <a
             class="overlay-btn"
+            data-i18n="portfolioBtnVisit"
             target="_blank"
             href="https://alexandr-melnichenko.github.io/dream-team-project/"
-            >DEMO</a
+            >VISIT</a
           >
         </div>
       </div>
@@ -107,9 +147,13 @@
       />
       <div class="overlay">
         <div class="overlay-content">
-          <p class="overlay-tag">personal project</p>
-          <h3 class="overlay-title">RENTAL CAR</h3>
-          <p class="overlay-text">
+          <p data-i18n="portfolioOverlayTagPersonalProject" class="overlay-tag">
+            personal project
+          </p>
+          <h3 data-i18n="portfolioOverlayTitleRentalCar" class="overlay-title">
+            RENTAL CAR
+          </h3>
+          <p data-i18n="portfolioOverlayTextRentalCar" class="overlay-text">
             Rental car is a personal test project designed to search and select
             rental cars from the provided database. The project is written using
             React and Redux. <br /><br />
@@ -121,9 +165,10 @@
 
           <a
             class="overlay-btn"
+            data-i18n="portfolioBtnVisit"
             target="_blank"
             href="https://rental-car-indol-two.vercel.app/catalog"
-            >DEMO</a
+            >VISIT</a
           >
         </div>
       </div>
@@ -131,6 +176,8 @@
   </ul>
 
   <div class="phrase-container">
-    <p class="phrase">And many more to come!</p>
+    <p data-i18n="portfolioTextManyMore" class="phrase">
+      And many more to come!
+    </p>
   </div>
 </section>

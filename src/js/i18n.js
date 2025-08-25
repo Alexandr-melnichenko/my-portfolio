@@ -1,0 +1,193 @@
+import i18next from 'i18next';
+
+const translations = {
+  en: {
+    translation: {
+      menuLinkAboutMe: 'About me',
+      menuLinkSkills: 'Skills',
+      menuLinkPortfolio: 'Portfolio',
+      menuLinkContactMe: 'CONTACT ME',
+      modalMenuLinkAboutMe: 'About me',
+      modalMenuLinkSkills: 'Skills',
+      modalMenuLinkPortfolio: 'Portfolio',
+      modalMenuLinkContactMe: 'CONTACT ME',
+      heroTextHi: 'Hi, I am',
+      heroTitleName: 'Olexandr',
+      heroTextProfession: 'Full-stack developer',
+      berriesTitle: 'HOW TO IMPLEMENT A DREAM?',
+      berriesText:
+        'First, you have a dream, like a fascinating picture filled with admiration! Then, you feel a burning desire to make it come true. Desire generates ideas on how you can achieve your goals. And ideas fueled by plans require specific actions. And so you go to your success, taking the steps that, according to your plan, will lead you to your dream.',
+      berriesHiddenText:
+        'In the modern world, most ideas and projects require scaling on the Internet. And for this purpose, you will need a high-quality and attractive website.<br /><br />I can help you with this, because making interesting websites is my dream and aspiration. And by working together, we can make your dream come true!<br /><br />We will discuss all your wishes and project details. Step by step, we will create the right concept and design. We will carefully consider usability and each function. And in the end, you will get your ship, on which you will sail to your dream in the boundless ocean of the Internet!<br /><br />Contact us right now and your dream will find you!',
+      berriesBtnMore: 'MORE',
+      berriesBtnReadMore: 'READ MORE',
+      berriesBtnHide: 'HIDE',
+      aboutMeTitle: 'ABOUT ME',
+      aboutMeText:
+        ' My name is Olexandr Melnichenko. I am an entrepreneur, freelancer and full stack developer of websites and mobile applications. I completed a year and a half of training in full stack development. And I decided that this area is interesting to me due to its technological nature and creative potential in building projects. <br /><br />After the courses, I continuously study and practice on my own projects, because it is an extremely interesting process - to create technologically complex things. Mastering new technologies on practical tasks is one of my hobbies and arouses my keen interest. <br /><br />My work principles are that everything must be done to the end and with high quality. I am fond of playing the guitar, sports, yoga and designing. I also write books on the topic of philosophy and science fiction. I love communication and active recreation.',
+      aboutMeTitleDesign: 'DESIGN',
+      aboutMeTextDesign:
+        'I can design the website based on your needs and suggestions. I can also create it from scratch by consulting with you during work.',
+      aboutMeTitleDevelopment: 'DEVELOPMENT',
+      aboutMeTextDevelopment:
+        ' Based on a project created by me or another one, sent by you, I can program the website to be fully functional and responsive.',
+      aboutMeTitleMaintenance: 'MAINTENANCE',
+      aboutMeTextMaintenance:
+        'In case of any problems or the need for changes, I can introduce new functionalities and solutions.',
+      skillsTitle: 'SKILLS',
+      skillsTitleUsingNow: 'USING NOW',
+      skillsBtnMore: 'MORE',
+      skillsTitleLearning: 'LEARNING',
+      skillsTitleOtherSkills: 'OTHER SKILLS',
+      skillsTitleEnglish: 'ENGLISH',
+      skillsTitleUkrainian: 'UKRAINIAN',
+      skillsUkrainianLevel: 'NATIVE',
+      portfolioTitle: 'PORTFOLIO',
+      portfolioBtnAll: 'ALL',
+      portfolioBtnPersonalProjects: 'PERSONAL PROJECTS',
+      portfolioBtnTeamProjects: 'TEAM PROJECTS',
+      portfolioOverlayTagTeamProject: 'team project',
+      portfolioOverlayTitleAquatrack: 'AQUATRACK',
+      portfolioOverlayTextAquatrack:
+        'Water tracker is a team project designed to quickly track the amount of water drunk per day. <br /><br />It is relevant for athletes and people who monitor their own health. <br /><br />The tracker uses authorization, a calendar and graphics to clearly display the dose of water drunk as a percentage of the daily norm. <br /><br />When writing the project, such libraries as React, Redux, Node.js and MongoDB were used.',
+      portfolioOverlayTagPersonalProject: 'personal project',
+      portfolioOverlayTitleInventory: 'INVENTORY',
+      portfolioOverlayTextInventory:
+        'Inventory is my personal test project, which implements the functionality of accounting for goods added to the warehouse with the potential ability to edit, add and delete goods from the database. <br /><br />The database is implemented on SQL, the project is deployed on a personal VPS, using Docker and other technologies. The project was implemented on React, Redux, MYSQL, NODE.JS and Java Script.',
+      portfolioBtnVisit: 'VISIT',
+      portfolioOverlayTitleLloydJefferson: 'LLOYDJEFFERSON.',
+      portfolioOverlayTextLloydJefferson:
+        "This is a team training project - a landing page with a web developer's portfolio. This project actively uses CSS animation, a dark theme and adaptive layout are implemented. <br /><br />In this project, I acted as a team lead and simultaneously did one of the sections. The project was completed in a week. HTML and CSS were used.",
+      portfolioOverlayTitleRentalCar: 'RENTAL CAR',
+      portfolioOverlayTextRentalCar:
+        'Rental car is a personal test project designed to search and select rental cars from the provided database. The project is written using React and Redux. <br /><br />It implements filtering of cars by brand, price and mileage. And also a card of the car itself with an enlarged photo and a detailed description. <br /><br />Submitting the form is simulated by a pop-up message about successful sending.',
+      portfolioTextManyMore: 'And many more to come!',
+      contactTitleContact: 'CONTACT',
+      contactText:
+        'My name is Оlexander Melnichenko. I am a full stack web developer. I am proficient in HTML, CSS, Javascript, React, Redux and other technologies. If you need to write a mobile application or website, please contact me by filling out this form below:',
+      contactFormInputPlaceholderName: 'ENTER YOUR NAME*',
+      contactFormInputPlaceholderEmail: 'ENTER YOUR EMAIL*',
+      contactFormInputPlaceholderPhone: 'PHONE NUMBER',
+      contactFormInputPlaceholderMessage: 'YOUR MESSAGE*',
+      contactFormBtnSubmit: 'SUBMIT',
+      footerUpBtn: 'BACK TO TOP',
+      footerCopyrightText: '@2025 Olexandr Melnichenko All Rights Reserved.',
+    },
+  },
+  uk: {
+    translation: {
+      menuLinkAboutMe: 'Про мене',
+      menuLinkSkills: 'Навички',
+      menuLinkPortfolio: 'Портфоліо',
+      menuLinkContactMe: "ЗВ'ЯЗАТИСЯ",
+      modalMenuLinkAboutMe: 'Про мене',
+      modalMenuLinkSkills: 'Навички',
+      modalMenuLinkPortfolio: 'Портфоліо',
+      modalMenuLinkContactMe: "ЗВ'ЯЗАТИСЯ",
+      heroTextHi: 'Привіт, моє імʼя',
+      heroTitleName: 'Олександр',
+      heroTextProfession: 'Я - веб розробник',
+      berriesTitle: 'ЯК ЗДІЙСНИТИ МРІЮ?',
+      berriesText:
+        'Спочатку у вас є мрія, немов яскрава картина, сповнена захоплення! Потім ви відчуваєте палке бажання втілити її в життя. Бажання породжує ідеї про те, як ви можете досягти своїх цілей. А ідеї, підживлені планами, вимагають конкретних дій. І так ви йдете до свого успіху, роблячи кроки, які, згідно з вашим планом, приведуть вас до вашої мрії.',
+      berriesHiddenText:
+        'У сучасному світі більшість ідей та проектів потребують масштабування в Інтернеті. І для цього вам знадобиться якісний та привабливий веб-сайт.<br /><br />Я можу допомогти вам у цьому, адже створення цікавих веб-сайтів – це моя мрія та прагнення. І працюючи разом, ми можемо втілити вашу мрію в реальність!<br /><br />Ми обговоримо всі ваші побажання та деталі проекту. Крок за кроком ми створимо правильну концепцію та дизайн. Ми ретельно продумаємо зручність використання та кожну функцію. І врешті-решт ви отримаєте свій корабель, на якому попливете до своєї мрії в безмежному океані Інтернету!<br /><br />Зверніться до мене прямо зараз, і ваша мрія знайде вас!',
+      berriesBtnMore: 'БІЛЬШЕ',
+      berriesBtnReadMore: 'ЧИТАТИ БІЛЬШЕ',
+      berriesBtnHide: 'СХОВАТИ',
+      aboutMeTitle: 'ПРО МЕНЕ',
+      aboutMeText:
+        'Мене звати Олександр Мельниченко. Я підприємець, фрілансер та full stack розробник веб-сайтів і мобільних додатків. Я пройшов півтора року навчання з full stack розробки. І вирішив, що ця сфера мені цікава завдяки своїй технологічності та творчому потенціалу у створенні проектів. <br /><br />Після курсів я постійно навчаюся та практикуюся над власними проектами, адже це надзвичайно цікавий процес – створювати технологічно складні речі. Оволодіння новими технологіями на практичних завданнях – одне з моїх хобі та викликає у мене жвавий інтерес. <br /><br />Мої принципи роботи полягають у тому, що все має бути зроблено до кінця та якісно. Я захоплююся грою на гітарі, спортом, йогою та дизайном. Також пишу книги на тему філософії та наукової фантастики. Люблю спілкування та активний відпочинок.',
+      aboutMeTitleDesign: 'РОЗРОБКА',
+      aboutMeTextDesign:
+        'Я можу розробити вебсайт, виходячи з ваших потреб та пропозицій. Я також можу створити його з нуля, консультуючись з вами під час роботи.',
+      aboutMeTitleDevelopment: 'РОЗВИТОК',
+      aboutMeTextDevelopment:
+        'На основі проєкту, створеного мною, або іншого, надісланого вами, я можу запрограмувати вебсайт, щоб він був повністю функціональним та адаптивним.',
+      aboutMeTitleMaintenance: 'ТЕХНІЧНЕ ОБСЛУГОВУВАННЯ',
+      aboutMeTextMaintenance:
+        'У разі виникнення будь-яких проблем або потреби в змінах, я можу впровадити нові функції та рішення.',
+      skillsTitle: 'НАВИЧКИ',
+      skillsTitleUsingNow: 'ОСВОЄНІ НАВИЧКИ:',
+      skillsBtnMore: 'БІЛЬШЕ',
+      skillsTitleLearning: 'ВИВЧАЮТЬСЯ',
+      skillsTitleOtherSkills: 'ІНШІ НАВИЧКИ',
+      skillsTitleEnglish: 'АНГЛІЙСЬКА',
+      skillsTitleUkrainian: 'УКРАЇНСЬКА',
+      skillsUkrainianLevel: 'РІДНА',
+      portfolioTitle: 'ПОРТФОЛІО',
+      portfolioBtnAll: 'УСІ',
+      portfolioBtnPersonalProjects: 'ОСОБИСТІ ПРОЕКТИ',
+      portfolioBtnTeamProjects: 'КОМАНДНІ ПРОЕКТИ',
+      portfolioOverlayTagTeamProject: 'командний проект',
+      portfolioOverlayTitleAquatrack: 'АКВАТРЕК',
+      portfolioOverlayTextAquatrack:
+        "Трекер води – це командний проект, розроблений для швидкого відстеження кількості випитої води за день. <br /><br />Він актуальний для спортсменів та людей, які стежать за власним здоров'ям. <br /><br />Трекер використовує авторизацію, календар та графіку для наочного відображення дози випитої води у відсотках від добової норми. <br /><br />Під час написання проекту використовувалися такі бібліотеки, як React, Redux, Node.js та MongoDB.",
+      portfolioOverlayTagPersonalProject: 'особистий проект',
+      portfolioOverlayTitleInventory: 'ІНВЕНТАРИЗАЦІЯ',
+      portfolioOverlayTextInventory:
+        'Inventory — це мій особистий тестовий проект, який реалізує функціонал обліку товарів, доданих на склад, з потенційною можливістю редагування, додавання та видалення товарів з бази даних. <br /><br />База даних реалізована на SQL, проект розгорнуто на особистому VPS, з використанням Docker та інших технологій. Проект реалізовано на React, Redux, MYSQL, NODE.JS та Java Script.',
+      portfolioBtnVisit: 'ВІДВІДАТИ',
+      portfolioOverlayTitleLloydJefferson: 'ЛЛОЙД ДЖЕФФЕРСОН.',
+      portfolioOverlayTextLloydJefferson:
+        'Це навчальний командний проект - цільова сторінка з портфоліо веб-розробника. У цьому проекті активно використовується CSS-анімація, реалізована темна тема та адаптивна верстка. <br /><br />У цьому проекті я виконував роль тім ліда та одночасно реалізовував один з розділів. Проект було завершено за тиждень. Використовувалися HTML та CSS.',
+      portfolioOverlayTitleRentalCar: 'ПРОКАТ АВТОМОБІЛІВ',
+      portfolioOverlayTextRentalCar:
+        'Rental car – це персональний тестовий проєкт, призначений для пошуку та вибору орендованих автомобілів з наданої бази даних. Проєкт написаний за допомогою React та Redux. <br /><br />Він реалізує фільтрацію автомобілів за маркою, ціною та пробігом. А також картку самого автомобіля зі збільшеним фото та детальним описом. <br /><br />Відправлення форми імітується спливаючим повідомленням про успішне відправлення.',
+      portfolioTextManyMore: 'І багато іншого попереду!',
+      contactTitleContact: 'КОНТАКТ',
+      contactText:
+        "Мене звати Олександр Мельниченко. Я веб-розробник з повним набором знань. Я вільно володію HTML, CSS, Javascript, React, Redux та іншими технологіями. Якщо вам потрібно написати мобільний додаток або веб-сайт, будь ласка, зв'яжіться зі мною, заповнивши цю форму нижче:",
+      contactFormInputPlaceholderName: "ВВЕДІТЬ СВОЄ ІМ'Я*",
+      contactFormInputPlaceholderEmail: 'ВВЕДІТЬ СВОЮ ПОШТУ*',
+      contactFormInputPlaceholderPhone: 'НОМЕР ТЕЛЕФОНУ',
+      contactFormInputPlaceholderMessage: 'ВАШЕ ПОВІДОМЛЕННЯ*',
+      contactFormBtnSubmit: 'НАДІСЛАТИ',
+      footerUpBtn: 'НАЗАД НАГОРУ',
+      footerCopyrightText: '@2025 Олександр Мельниченко. Всі права захищено.',
+    },
+  },
+};
+
+i18next.init({
+  lng: 'en', // язык по умолчанию
+  debug: true, // помогает при отладке
+  resources: translations,
+});
+
+export function updateContent() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translation = i18next.t(key);
+
+    // Проверить содержит ли перевод HTML-теги через наличие "<"
+    if (translation.includes('<')) {
+      el.innerHTML = translation;
+    } else {
+      el.textContent = translation;
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    el.placeholder = i18next.t(key);
+  });
+
+  const berriesReadMoreBtn = document.getElementById('berriesReadMoreBtn');
+  const berriesHiddenContent = document.getElementById('berriesHiddenContent');
+
+  if (berriesReadMoreBtn && berriesHiddenContent) {
+    if (berriesHiddenContent.classList.contains('visible')) {
+      berriesReadMoreBtn.textContent = i18next.t('berriesBtnHide');
+    } else {
+      berriesReadMoreBtn.textContent = i18next.t('berriesBtnReadMore');
+    }
+  }
+}
+
+export function changeLanguage(lang) {
+  i18next.changeLanguage(lang, (err, t) => {
+    if (err) return console.log('failed to switch language', err);
+    updateContent();
+  });
+}
