@@ -26,3 +26,21 @@ form.addEventListener('submit', async event => {
     console.error('Error:', error);
   }
 });
+
+function showToast(message, type) {
+  const toast = document.createElement('div');
+  toast.classList.add('toast', `toast--${type}`);
+  toast.textContent = message;
+
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.add('show');
+  }, 100);
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    toast.classList.add('hide');
+    toast.addEventListener('transitionend', () => toast.remove());
+  }, 3000);
+}
